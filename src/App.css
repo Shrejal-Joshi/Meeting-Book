@@ -1,38 +1,85 @@
-.App {
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container
+{
+  margin: 0 auto;
+  height: 100%;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header
+{
+  width: 100%;
+  height: 30px;
+  background: rgb(204, 21, 60);
+
+}
+h2{
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+.info-container
+{
+  
+  width: 40%;
+  height: 100%;
+  margin: 5% auto;
+  overflow: hidden;
+  color: black;
+  
+}
+.nextbtn
+{
+  width: 20%;
+  background-color:rgb(204, 21, 60) ;
+  padding: 5px;
+  color : white;
+  margin: 2% auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.calendar-container
+{
+  width: 20%;
+  height: 100%;
+  margin: 5% auto;
+  overflow: hidden;
+}
+.external-event-calendar {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.tracks
+{
+    
+    display: grid;
+    width: 40%;
+    margin: 2% auto;
+  grid-template-columns: auto auto auto auto;
+    padding: 5px;
+    min-width: 30%;
+    max-width: 40%;
+    color: rgb(85, 84, 84);
+    grid-gap: 5px;
+    cursor: pointer;
+}
+.time-slots   {
+  border: 1px solid rgb(122, 122, 122);
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+}
+.tracks :hover
+{
+  background-color: cornflowerblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
